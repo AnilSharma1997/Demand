@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.batmanlol.demandui.MapsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar" >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/search_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Search"
+                        android:textSize="25dp"
+                        android:inputType="textPersonName" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageButton
+                    android:id="@+id/send"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="end"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_search_black_24dp" />
+
+            </FrameLayout>
+
+                <Button
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="   Search by Category"
+                    android:paddingLeft="2dp"
+                    android:textAlignment="textStart"
+                    android:drawableLeft="@drawable/ic_filter_list_black_24dp"
+                    android:onClick="OpenAlert"
+                    android:textColorLink="#fff"
+
+                    android:background="@android:color/transparent"
+                    />
+
+                <!--
+                <Spinner
+                    android:id="@+id/spinner12"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:backgroundTint="#fff"
+                    android:textColor="#4caf50"
+                    android:entries="@array/country_arrays"
+                    android:prompt="@string/country_prompt" />
+                -->
+
+            </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+    <!--
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="8dp"
+               android:layout_marginLeft="40dp"
+               android:layout_marginTop="20dp">
+
+               <EditText
+                   android:id="@+id/input_search"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Search"
+                   android:inputType="textPersonName" />
+           </android.support.design.widget.TextInputLayout>
+
+           <Spinner
+               android:id="@+id/spinner1"
+               android:layout_marginTop="25dp"
+               android:layout_marginLeft="40dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:entries="@array/country_arrays"
+               android:prompt="@string/country_prompt" />
+
+
+       </LinearLayout>
+
+   -->
+       <android.support.design.widget.FloatingActionButton
+           android:id="@+id/fab"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="bottom|end"
+           android:layout_margin="@dimen/fab_margin"
+           android:background="#fff"
+           app:backgroundTint="#1e88e5"
+           app:elevation="11dp"
+           app:srcCompat="@drawable/ic_add_black_24dp"
+           tools:ignore="VectorDrawableCompat" />
+
+   </android.support.design.widget.CoordinatorLayout>

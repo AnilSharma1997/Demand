@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "37027669866",
+    "firebase_url": "https://demand-1512740543829.firebaseio.com",
+    "project_id": "demand-1512740543829",
+    "storage_bucket": "demand-1512740543829.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37027669866:android:2283644407b367ba",
+        "android_client_info": {
+          "package_name": "com.example.batmanlol.demandui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37027669866-0lnjns9eo6cibfmoblrf17chdao89qks.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.batmanlol.demandui",
+            "certificate_hash": "2672a651e9e42bd29c643693dba99ee4dec88a88"
+          }
+        },
+        {
+          "client_id": "37027669866-ra71gm5mdal2n0f0e1aiq23v5jf141oj.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "37027669866-h22gq4tbq7fpce9tlmcmlklucd1euf9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK4pUCFfBZqQKPKV71yK7xq3yIeUaPGr0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37027669866-ra71gm5mdal2n0f0e1aiq23v5jf141oj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
